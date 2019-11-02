@@ -2,7 +2,7 @@
 <br/>
 
 <div>
-  <h4><%= @blog_post.content %></h4>
+  <h4><%= simple_format(@blog_post.content.gsub(/\r\n/, '<br/>')) %></h4>
 </div>
 
 <br/>
